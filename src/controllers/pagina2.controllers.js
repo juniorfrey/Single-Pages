@@ -13,7 +13,10 @@ export const pagina2 = async() => {
     divElement.innerHTML = view;
 
     const publicaciones = divElement.querySelector('#post');
+    const totalPost     = divElement.querySelector('#total');
     const posts = await getPost();
+    totalPost.innerHTML = posts.length;
+
     
     posts.forEach(post => {
         publicaciones.innerHTML += /*html*/`<li class="list-group-item border-primary bg-dark text-white">
