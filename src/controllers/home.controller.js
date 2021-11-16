@@ -4,6 +4,7 @@ export const home =  () => {
 
     const divElement = document.createElement('div');
     divElement.classList.add('fondo');
+    divElement.classList.add('container')
     divElement.innerHTML = views;
 
     const btnHome = divElement.querySelector('#btnCLick');
