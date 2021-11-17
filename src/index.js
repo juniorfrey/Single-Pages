@@ -11,4 +11,6 @@ if(window.location.hash == ''){
 
 window.addEventListener('hashchange', () => {
     router(window.location.hash);
+    //const v = history.replaceState(undefined, undefined, "#hash_value");
+    //console.log(v);
 });
